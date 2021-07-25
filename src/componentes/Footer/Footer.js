@@ -41,7 +41,7 @@ function Footer () {
               </div>
               <div className="col-md-4 footer-col">
                 <h3>Programacion WEB 3</h3>
-                <p className="text-white bg-dark">Aprendiendo React JS</p>
+                <p className="text-white bg-dark">Aprendiendo React JS (Franck Tscherig-2021)</p>
               </div>
             </div>
           </div>
