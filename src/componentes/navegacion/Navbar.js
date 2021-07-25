@@ -1,5 +1,5 @@
 /* https://getbootstrap.com/docs/5.0/components/navbar/*/
-   /* https://www.geeksforgeeks.org/how-to-change-navigation-bar-color-in-bootstrap/     */
+/* https://www.geeksforgeeks.org/how-to-change-navigation-bar-color-in-bootstrap/     */
 
 import React from 'react';
 import {Link} from 'react-router-dom';
@@ -11,9 +11,7 @@ function Navbar () {
       <nav className="navbar navbar-expand-lg navbar-dark bg-danger ">
 
         <div className="container-fluid">
-          <Link to="/">
-            <img src={image} width="100px" />{' '}
-          </Link>
+         
           <button
             className="navbar-toggler"
             type="button"
@@ -25,27 +23,28 @@ function Navbar () {
           >
             <span className="navbar-toggler-icon" />
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="navbar navbar-light bg-dark"    id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav nav-pills ">
-                <Link className="nav-link active" to="/" href="#">Home</Link>
+                <Link className="nav-link active" to="/" href="#"><h3>HOME</h3></Link>
               </li>
               <li className="nav nav-tabs ">
-                <Link className="nav-link " to="/Pag1" href="#">Link1</Link>
+                <Link className="nav-link " to="/Pag1" href="#"><h3>Página #1</h3></Link>
               </li>
               <li className="nav nav-tabs">
-                <Link className="nav-link" to="/Pag2" href="#">Link2</Link>
+                <Link className="nav-link" to="/Pag2" href="#"><h3>Página #2</h3></Link>
+              </li>
+              <li className="nav nav-tabs">
+                <Link className="nav-link" to="/Pag3" href="#"><h3>Página #3</h3></Link>
+              </li>
+              <li className="nav nav-tabs">
+                <Link className="nav-link" to="/Pag4" href="#"><h3>Página #4</h3></Link>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  PW3-IUPA
-                </a>
-              </li>
+               
+              </li> <Link to="/">
+            <img src={image} width="50%" />{' '}
+          </Link>
             </ul>
           </div>
         </div>

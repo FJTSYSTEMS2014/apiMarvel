@@ -1,7 +1,6 @@
 import axios from 'axios';
-import LogoImage from '../src/img/marvelbg.jpg';
+import LogoImage from '../src/img/marvelbg4.jpg';
 import Header from './componentes/Header';
-
 import React, {useEffect, useState} from 'react';
 const url =
   'https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=0f7ec6e9620a0aea41af082d03d7a88d&hash=';
@@ -32,7 +31,7 @@ function App () {
   return (
     <div style={sectionStyle} className="d-flex justify-content-center">
       <Header />
-
+  
     </div>
   );
 }

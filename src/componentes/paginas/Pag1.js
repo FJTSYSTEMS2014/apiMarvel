@@ -1,14 +1,15 @@
-import React from 'react'
-import Carusel2 from '../../componentes/carusel/Carusel2'
+import React from 'react';
+import Carusel2 from '../../componentes/carusel/Carusel2';
 
-function pag1() {
-    return (
-        <div >
+function pag1 () {
+  return (
+    <div>
 
-               <h1>     ♪♪♪♪♪♫♫♫ Esta es la pagina 1 ♪♪♪♪♪♫♫♫ </h1>
-               <Carusel2/>
-        </div>
-    )
+      <h1 className="row justify-content-center"> ◘ Esta es la página 1  ◘ </h1>
+
+      <div /><Carusel2 />
+    </div>
+  );
 }
 
-export default pag1
+export default pag1;
