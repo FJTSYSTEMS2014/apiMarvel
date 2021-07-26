@@ -6,12 +6,13 @@ const url3='http://gateway.marvel.com/v1/public/stories?ts=1&limit=10&apikey=344
 const url2='http://gateway.marvel.com/v1/public/comics?ts=1&limit=10&apikey=344d40df0c8cc373141c1dc321fae9cf&hash=bd0722d5750b6362d5ba0212ca36726b'
 const url =
   'http://gateway.marvel.com/v1/public/characters?ts=1&limit=50&apikey=344d40df0c8cc373141c1dc321fae9cf&hash=bd0722d5750b6362d5ba0212ca36726b';
+  const url4='https://gateway.marvel.com:443/v1/public/characters?ts=1&limit=20&apikey=0f7ec6e9620a0aea41af082d03d7a88d&hash=804f04417964946af208ca3ab2546bb9';
 function Get_Marvel2 () {
   const [personajes, setPersonajes] = useState ([]);
 
   // apenas inicie el componente usamos useEffect
   useEffect (() => {
-    fetch (url) // hacemos la petición get
+    fetch (url4) // hacemos la petición get
       .then (res => res.json ()) // cuando hayamos terminado (then) e texto plano lo parseamos a json la respuesta de la petición
       .then (res => setPersonajes (res.data.results)) // cuando hayamos terminado (then) actualizamos el estado nombre
       .catch (error => {
