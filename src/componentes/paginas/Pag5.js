@@ -10,7 +10,7 @@ function Pag5 () {
 
   console.log (mostrarLista);
   return (
-    <div className=" justify-content-center">
+    <div className=" justify-content-center text-light bg-dark">
 
       <h1 className="row justify-content-center"> </h1>
       <div className="text-center">

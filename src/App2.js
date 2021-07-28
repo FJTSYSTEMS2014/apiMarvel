@@ -18,7 +18,7 @@ function App2 () {
       <Router>
         <Navbar />
 
-        <Switch>
+        <Switch >
           <Route path="/" exact component={App1} />
           <Route path="/Pag1" component={Pag1} />
           <Route path="/Pag2" component={Pag2} />

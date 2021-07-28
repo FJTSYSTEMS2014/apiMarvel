@@ -1,13 +1,14 @@
 import React from 'react';
 import Carusel2 from '../../componentes/carusel/Carusel2';
+import Formulario from '../Formulario/Formulario';
 
 function pag1 () {
   return (
     <div>
 
-      <h1 className="row justify-content-center"> ◘ Esta es la página 1  ◘ </h1>
-
-      <div /><Carusel2 />
+  
+      <h1 className="row justify-content-center"> Crear URL de Marvel </h1>
+           <Formulario/>
     </div>
   );
 }

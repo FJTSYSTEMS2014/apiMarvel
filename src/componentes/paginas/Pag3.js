@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import foto1 from '../../../src/img/animated-page-load-1.gif';
 
 function Pag3 () {
-  const [mostrarLista, setMostrarLista] = useState (false);
+  const [mostrarLista, setMostrarLista] = useState (true);
 
   console.log (mostrarLista);
   return (
