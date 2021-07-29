@@ -3,8 +3,9 @@ import React, { useState, useEffect } from "react";
 import DetalleDeHeroe from "./components/DetalleDeHeroe";
 import ListaHeroes from "./components/ListaDeHeroes";
 import { getHeroes } from "./services/marvel";
-let img1="COCO"
-const img=`https://i.ibb.co/XVc85Xh/${img1}.jpg`;
+import img1 from "../../img/coco.jpg"
+import InnerImageZoom from 'react-inner-image-zoom'
+const img=`${img1}`;
 
 // Cocos ver
 export default function App() {
@@ -65,13 +66,18 @@ export default function App() {
             if(busquedaActual=="coco"
             ||busquedaActual=="coc"
             ||busquedaActual=="Coc"
-            ||busquedaActual=="COc"
+            ||busquedaActual=="cOc"
+            ||busquedaActual=="coC"
+            ||busquedaActual=="coc"
             ||busquedaActual=="COC"
+            ||busquedaActual=="CoCo"
+            ||busquedaActual=="cOcO"
+            ||busquedaActual=="cOCO"
             ||busquedaActual=="COcO"
             ||busquedaActual=="COCO"){
               console.log("search " + busquedaActual);
               setCoco(true);
-              setFirst(0);
+           
               setLoading(false);
             }
             
@@ -136,7 +142,7 @@ export default function App() {
       </div>
 
       <div className="col-6">
-      {coco  && <img src={img} />}
+      {coco  && < InnerImageZoom className="card-img-top mx-auto d-block" img src={img} />}
         {!coco&& !isLoading  && ( <DetalleDeHeroe color={color} heroe={selectedHeroeData} /> )}
         {isLoading && <>Loading ...</>}
        

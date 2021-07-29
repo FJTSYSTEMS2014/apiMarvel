@@ -1,4 +1,5 @@
 import ListaDeLinks from "./ListaDeLinks";
+import InnerImageZoom from 'react-inner-image-zoom'
 
 function renderEmptyList() {
   return <div className="text-light bg-dark"><h5>heroe seleccionado</h5></div>;
@@ -10,7 +11,7 @@ function DetalleDeHeroe(props) {
   }
   return (
     <div className="card">
-      <img
+      < InnerImageZoom  img
         className="card-img-top"
         src={props.heroe.thumbnail.path + "." + props.heroe.thumbnail.extension}
         alt={props.heroe.name}
