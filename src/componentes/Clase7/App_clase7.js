@@ -70,6 +70,7 @@ export default function App() {
             ||busquedaActual=="COC"   ||busquedaActual=="coCo"
             ||busquedaActual=="CoCo"  ||busquedaActual=="cOcO" 
             ||busquedaActual=="cOCO"   ||busquedaActual=="coCO"
+            ||busquedaActual=="CocO" ||busquedaActual=="cOCo"
             ||busquedaActual=="COcO"  ||busquedaActual=="COCO"){
               console.log("search " + busquedaActual);
               setCoco(true);
