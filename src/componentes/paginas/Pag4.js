@@ -6,7 +6,7 @@ function Pag4() {
         <div>
             <h1 className="row justify-content-center"> ◘ Esta es la pagina 4  ◘  </h1>
             <div class="text-center"> <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vsx_YQyd9co?start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <App_clase7/>
+
         </div>
     )
 }
