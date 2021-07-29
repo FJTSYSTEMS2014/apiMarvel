@@ -67,6 +67,7 @@ export default function App() {
             ||busquedaActual=="Coc"
             ||busquedaActual=="COc"
             ||busquedaActual=="COC"
+            ||busquedaActual=="COcO"
             ||busquedaActual=="COCO"){
               console.log("search " + busquedaActual);
               setCoco(true);
