@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import DetalleDeHeroe from "./components/DetalleDeHeroe";
 import ListaHeroes from "./components/ListaDeHeroes";
 import { getHeroes } from "./services/marvel";
-import img1 from "../../img/coco.jpg"
+import img1 from "../../img/ezgif-2-b9a30b479983.gif"
 import InnerImageZoom from 'react-inner-image-zoom'
 const img=`${img1}`;
 
