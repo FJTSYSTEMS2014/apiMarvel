@@ -63,18 +63,14 @@ export default function App() {
         {'  '}
         <button
           onClick={() => {
-            if(busquedaActual=="coco"
-            ||busquedaActual=="coc"
-            ||busquedaActual=="Coc"
-            ||busquedaActual=="cOc"
-            ||busquedaActual=="coC"
-            ||busquedaActual=="coc"
-            ||busquedaActual=="COC"
-            ||busquedaActual=="CoCo"
-            ||busquedaActual=="cOcO"
-            ||busquedaActual=="cOCO"
-            ||busquedaActual=="COcO"
-            ||busquedaActual=="COCO"){
+            if(busquedaActual=="coco"||busquedaActual=="coc"
+            ||busquedaActual=="Coc"  ||busquedaActual=="Coco"
+            ||busquedaActual=="cOc"  ||busquedaActual=="coC"
+            ||busquedaActual=="coc"   ||busquedaActual=="COc"
+            ||busquedaActual=="COC"   ||busquedaActual=="coCo"
+            ||busquedaActual=="CoCo"  ||busquedaActual=="cOcO" 
+            ||busquedaActual=="cOCO"   ||busquedaActual=="coCO"
+            ||busquedaActual=="COcO"  ||busquedaActual=="COCO"){
               console.log("search " + busquedaActual);
               setCoco(true);
            
