@@ -1,7 +1,7 @@
 import ListaDeLinks from "./ListaDeLinks";
 
 function renderEmptyList() {
-  return <div className="text-light bg-dark"><h5>No hay un heroe seleccionado</h5></div>;
+  return <div className="text-light bg-dark"><h5>heroe seleccionado</h5></div>;
 }
 
 function DetalleDeHeroe(props) {

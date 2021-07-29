@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import DetalleDeHeroe from "./components/DetalleDeHeroe";
 import ListaHeroes from "./components/ListaDeHeroes";
 import { getHeroes } from "./services/marvel";
+let img1="COCO"
+const img=`https://i.ibb.co/XVc85Xh/${img1}.jpg`;
 
 // Cocos ver
 export default function App() {
@@ -14,6 +16,8 @@ export default function App() {
   const [selectedHeroe, setSelectedHero] = useState(0);
 
   const [first, setFirst] = useState(0);
+  const [coco, setCoco] = useState(false);
+  const [coco1, setCoco1] = useState(false);
 
   // El theme actual
   const [selectedTheme, setSelectedTheme] = useState("light");
@@ -58,11 +62,27 @@ export default function App() {
         {'  '}
         <button
           onClick={() => {
-            console.log("search " + busquedaActual);
-            setHeroes([]);
-            setSelectedHero(0);
-            setFirst(0);
-            setLoading(true);
+            if(busquedaActual=="coco"
+            ||busquedaActual=="coc"
+            ||busquedaActual=="Coc"
+            ||busquedaActual=="COc"
+            ||busquedaActual=="COC"
+            ||busquedaActual=="COCO"){
+              console.log("search " + busquedaActual);
+              setCoco(true);
+              setFirst(0);
+              setLoading(false);
+            }
+            
+            else{
+              console.log("search " + busquedaActual);
+              setHeroes([]);
+              setSelectedHero(0);
+              setFirst(0);
+              setLoading(true);
+              setCoco(false);
+            }
+
           }}
           type="button"
           className="btn btn-primary"
@@ -115,10 +135,10 @@ export default function App() {
       </div>
 
       <div className="col-6">
-        {!isLoading && (
-          <DetalleDeHeroe color={color} heroe={selectedHeroeData} />
-        )}
+      {coco  && <img src={img} />}
+        {!coco&& !isLoading  && ( <DetalleDeHeroe color={color} heroe={selectedHeroeData} /> )}
         {isLoading && <>Loading ...</>}
+       
       </div>
     </div>
   );

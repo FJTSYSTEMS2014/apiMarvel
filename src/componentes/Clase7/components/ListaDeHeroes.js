@@ -1,6 +1,6 @@
 function ListaHeroes(props) {
   if (!props.heroes || props.heroes.length < 1) {
-    return   <div className="text-light bg-dark"><h5>Lista de heroes vacia</h5></div>;
+    return   <div className="text-light bg-dark"><h5>Lista de heroes</h5></div>;
   }
   return (
     props.heroes.length > 0 && (
