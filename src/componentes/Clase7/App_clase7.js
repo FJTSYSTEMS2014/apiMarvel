@@ -63,15 +63,7 @@ export default function App() {
         {'  '}
         <button
           onClick={() => {
-            if(busquedaActual=="coco"||busquedaActual=="coc"
-            ||busquedaActual=="Coc"  ||busquedaActual=="Coco"
-            ||busquedaActual=="cOc"  ||busquedaActual=="coC"
-            ||busquedaActual=="coc"   ||busquedaActual=="COc"
-            ||busquedaActual=="COC"   ||busquedaActual=="coCo"
-            ||busquedaActual=="CoCo"  ||busquedaActual=="cOcO" 
-            ||busquedaActual=="cOCO"   ||busquedaActual=="coCO"
-            ||busquedaActual=="CocO" ||busquedaActual=="cOCo"
-            ||busquedaActual=="COcO"  ||busquedaActual=="COCO"){
+            if( busquedaActual.toLowerCase().toString ()=="coco" || busquedaActual.toLowerCase().toString ()=="coc" ){
               console.log("search " + busquedaActual);
               setCoco(true);
            
