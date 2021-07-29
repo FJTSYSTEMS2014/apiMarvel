@@ -1,3 +1,10 @@
+# comandos heroku
+heroku login
+git status
+git add .
+git commit -m "commit"
+git push heroku master
+heroku open
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
