@@ -40,6 +40,7 @@ function Navbar () {
               <li className="nav nav-tabs">
                 <Link className="nav-link" to="/Pag4" href="#"><h3>Página #4</h3></Link>
               </li>
+
               <li className="nav-item">
                
               </li> <Link to="/">

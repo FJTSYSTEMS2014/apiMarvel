@@ -24,6 +24,7 @@ function App2 () {
           <Route path="/Pag2" component={Pag2} />
           <Route path="/Pag3" component={Pag3} />
           <Route path="/Pag4" component={Pag4} />
+          <Route path="/Pag5" component={Pag5} />
 
           <h1>     </h1>
         </Switch>
